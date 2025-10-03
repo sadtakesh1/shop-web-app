@@ -1,0 +1,85 @@
+@use "./products.scss" as *;
+@use "./cart.scss" as *;
+@use "./modal.scss" as *;
+@use "./checkout.scss" as *;
+
+html,
+body {
+  height: 100%;
+  background-color: #008080;
+  font-family: "Tahoma", "Verdana", sans-serif;
+  color: #000;
+}
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #c0c0c0;
+  color: #000;
+  min-height: 100vh;
+  border: 2px solid #fff;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+button,
+a.btn {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 4px 12px;
+  border: 2px solid #fff;
+  background-color: #c0c0c0;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  cursor: pointer;
+}
+
+button:hover,
+a.btn:hover {
+  background-color: #dcdcdc;
+}
+
+button:active,
+a.btn:active {
+  box-shadow: inset 2px 2px #808080, inset -2px -2px #fff;
+}
+
+header {
+  background-color: #000080;
+  color: #fff;
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
